@@ -1,16 +1,70 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
 
-p{
-    font-family: 'Montserrat', sans-serif;
+
+
+ul{
+    list-style-type: none;  
+    /* this is so there is no bulletpoints  */
 }
 
-#topButton{
-    font-family: 'Montserrat', sans-serif;
+h2{
+    font-family: 'Source Sans Pro', sans-serif;
 }
-.button{
-    font-family: 'Montserrat', sans-serif;
+
+a{
+    text-decoration: none;
+    color: none;
     
 }
-ul{
-    list-style: none;
+
+#topbar{
+    width: 100%;
+    height: 50px;
+    background-image: linear-gradient(#090970 -70px, #00d4ff 70%);
+    width:100vh;
+}
+
+ #topbar li, h2{
+    display: inline;
+} 
+
+.button:hover{
+    color: chartreuse;
+}
+
+
+
+#background{
+    background-color: beige;
+}
+
+#title{
+    float: left;
+    text-align: center;
+    margin: 10px;
+    color: #ffffff;
+    letter-spacing: 5px;
+}
+
+.button{
+    color: #ffffff;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    float: right;
+    padding: 20px;
+}
+
+#contactList li{
+    display: inline;
+}
+
+.link{
+    color: #858d99;
+    font-size: xx-large;
+    letter-spacing: 20px;
+    initial-letter-align: center;
+}
+
+td{
+    text-align: center;
 }

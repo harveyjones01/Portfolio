@@ -4,6 +4,7 @@
 
 ul{
     list-style-type: none;  
+    
     /* this is so there is no bulletpoints  */
 }
 
@@ -11,11 +12,16 @@ h2{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+p{
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
 #topbar{
     width: 100%;
     height: 50px;
     background-image: linear-gradient(#090970 -70px, #00d4ff 70%);
-    width:100vh;
+    /* width:100vh; */
+    width: auto;
 }
 
 .button:hover{
@@ -39,8 +45,14 @@ h2{
 }
 
 .contact-button{
+    
     float: left;
     padding: 20px;
-    align-content: center;
-    display: inline;
+    
+
+}
+
+#text{
+    text-align: center;
+    font-size: 150%;
 }

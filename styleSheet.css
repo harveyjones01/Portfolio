@@ -16,6 +16,13 @@ p{
     font-family: 'Source Sans Pro', sans-serif;
 }
 
+i.fab{
+    color:#8c6f94;
+}
+i.far{
+    color:#8c6f94;
+}
+
 #topbar{
     width: 100%;
     height: 50px;
@@ -45,14 +52,24 @@ p{
 }
 
 .contact-button{
-    
-    float: left;
     padding: 20px;
-    
-
+    display: block;
+    text-align: center;
 }
 
 #text{
     text-align: center;
     font-size: 150%;
+}
+
+.titles{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: x-large;
+    text-decoration: underline;
+}
+.data{
+    font-family: 'Source Sans Pro', sans-serif;
+    text-align: center;
+    font-size: medium;
 }

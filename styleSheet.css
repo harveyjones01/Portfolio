@@ -23,6 +23,16 @@ i.far{
     color:#8c6f94;
 }
 
+i.fab, i.far{
+    color:#8c6f94;
+}
+
+.contact-button{
+    padding: 20px;
+    display: inline-block;
+    align-items: center;
+}
+
 #topbar{
     width: 100%;
     height: 50px;
@@ -51,11 +61,7 @@ i.far{
     padding: 20px;
 }
 
-.contact-button{
-    padding: 20px;
-    display: block;
-    text-align: center;
-}
+
 
 #text{
     text-align: center;

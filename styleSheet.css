@@ -48,16 +48,6 @@ i.far{
     color:#8c6f94;
 }
 
-
-
-
-
-
-
-
-
-
-
 nav{
     padding: 10px;
 }
@@ -68,15 +58,10 @@ nav{
 }
 
 .social-elements{
-
     margin: 5%;
     list-style-type: none;
     display: inline-block;
 }
-
-
-
-
 
 #text{
     text-align: center;
@@ -93,4 +78,20 @@ nav{
     font-family: 'Source Sans Pro', sans-serif;
     text-align: center;
     font-size: medium;
+}
+
+.resume-link{
+    font-size: xx-large;
+    font-family: 'Source Sans Pro', sans-serif;
+    color: ;
+    text-decoration: none;
+
+}
+.resume-link :hover{
+    color: #8c6f94;
+}
+
+.resume{
+    text-align: center;
+    list-style-type: none;
 }

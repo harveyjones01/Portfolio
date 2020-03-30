@@ -64,11 +64,12 @@ nav{
 
 .social-list{
     text-align: center;
+    
 }
 
 .social-elements{
 
-    margin: 5px;
+    margin: 5%;
     list-style-type: none;
     display: inline-block;
 }

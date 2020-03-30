@@ -23,6 +23,10 @@ i.far{
     color:#8c6f94;
 }
 
+.social-list{
+    
+}
+
 #topbar{
     width: 100%;
     height: 50px;
@@ -54,7 +58,8 @@ i.far{
 .contact-button{
     padding: 20px;
     display: block;
-    text-align: center;
+    float: left;
+    align-content: center;
 }
 
 #text{

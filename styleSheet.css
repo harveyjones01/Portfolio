@@ -95,3 +95,23 @@ nav{
     text-align: center;
     list-style-type: none;
 }
+
+.projects-container{
+    box-sizing: content-box;
+}
+
+.project-table{
+    border-spacing: 10rem;
+    margin: auto;
+}
+
+.project-image{
+    height: 10rem;
+    width: 10rem;
+}
+
+
+
+.project-image:hover{
+    
+}

@@ -1,6 +1,18 @@
 $.ajax({
-    url: "instagram_follower_counter.py",
-    success: function(response) {
-      run_code(harvey_jones2001);
-    }
- });
+  type: 'POST',
+  url: "pyscript.py",
+  //data: {param: input}, passing some input here
+  dataType: "text",
+  success: function(response){
+     output = response;
+     alert(output);
+  }
+}).done(function(data){
+console.log(data);
+alert(data);
+});
+
+
+function run(){
+  alert("pressed");
+}

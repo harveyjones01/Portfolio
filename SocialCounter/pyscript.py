@@ -4,9 +4,6 @@ import urllib.request
 import urllib.parse
 import re
 
-
-    
-
 def instagram_stats(instagram_handle):
     x = urllib.request.urlopen('https://www.instagram.com/' + instagram_handle + '/') #saves the raw html page to the variable
     html = x.read()
@@ -37,6 +34,10 @@ def run_code(handle):
     print(arr)
     return arr 
 
+'''
 if __name__ =='__main__':
     run_code()
 
+'''
+
+print('hello world!')

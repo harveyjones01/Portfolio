@@ -3,8 +3,7 @@
 import urllib.request
 import urllib.parse
 import re
-from flask import Flask, jsonify, request, render_template
-app = Flask(__name__)
+
 
 
 def instagram_stats(instagram_handle):
@@ -38,5 +37,3 @@ def run_code(handle):
     return arr 
 
 
-if __name__ =='__main__':
-    return 2

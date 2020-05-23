@@ -49,6 +49,7 @@
     font-size: 1.5em;
     display: block;
     white-space: pre;
+
 }
 
 @media (max-width: 600px) {
@@ -69,7 +70,12 @@
     #mid-container {
         flex-direction: column;
         align-items: flex-start;
-  }
+        align-items: center;
+    }
+
+    #front-text{
+        display: inline-block;
+    }
 }
 
 .social-elements{

@@ -35,8 +35,13 @@
 
 #front-text{
     font-size: 1.5em;
+    display: block;
+    white-space: pre;
 }
 
+#front-headshot{
+    
+}
 
 .social-elements{
     margin: 5%;

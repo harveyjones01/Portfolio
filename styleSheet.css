@@ -27,11 +27,13 @@
     transform: rotate(-45deg) translate(-9px, 6px);
 }
   
-.change #bar2 {opacity: 0;}
+.change #bar2 {
+    opacity: 0;
+}
   
 .change #bar3 {
     -webkit-transform: rotate(45deg) translate(-8px, -8px);
-    transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);    
 }
 
 #top-container{
@@ -61,18 +63,9 @@
 
 }
 
-@media (max-width: 600px) {
-    .front-text{ display: inline-block; }
-    .front-text{ display: none; }
-}
-
-#picture-container{
-    
-}
-
 #front-headshot{
     width: 30em;
-    height: 30em;
+    height: 40em;
 }
 
 @media only screen and (max-width: 1200px) {
@@ -84,7 +77,6 @@
 
     #front-text{
         display: inline-block;
-        
     }
 }
 

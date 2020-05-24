@@ -2,6 +2,7 @@
 
 .text{
     font-family: 'Montserrat', sans-serif;
+
 }
 
 #top-bar{
@@ -45,11 +46,18 @@
     justify-content: space-around;
 }
 
+#front-text-container{
+    padding: 0%;
+
+}
+
+
 #front-text{
     font-size: 1.5em;
     font-size: 1.8vw;
     display: block;
     white-space: pre;
+    color: black
 
 }
 
@@ -59,7 +67,7 @@
 }
 
 #picture-container{
-    position: relative;
+    
 }
 
 #front-headshot{
@@ -92,10 +100,10 @@
 }
 
 i.fab{
-    color:#8c6f94;
+    color:black;
 }
 i.far{
-    color:#8c6f94;
+    color: black;
 }
 
 nav{

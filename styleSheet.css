@@ -20,6 +20,7 @@
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
+    z-index: 2;
 }
 
 .change #bar1 {
@@ -40,6 +41,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+}
+
+#navigation-bar{
+    visibility: hidden;
+    border-style: solid;
+    border-radius: 25px;
+    background-color: oldlace;
+    position: absolute;
+    height: 50em;
+    width: 25em;
+    top: 100px;
+    right: 0px;
+    z-index: 1;
 }
 
 #mid-container{

@@ -47,13 +47,24 @@
     visibility: hidden;
     border-style: solid;
     border-radius: 25px;
-    background-color: oldlace;
+    border-width: 1px;
+    background-color: white;
     position: absolute;
-    height: 50em;
-    width: 25em;
+    height: 50%;
+    width: 25%;
     top: 100px;
     right: 0px;
     z-index: 1;
+
+}
+
+.nav-option:hover{
+    color: #333;
+}
+
+#nav-list{
+    list-style: none;
+
 }
 
 #mid-container{

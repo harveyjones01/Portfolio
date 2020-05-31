@@ -138,9 +138,6 @@ nav{
 
 
 /* portfolio page */
-#portfolio-topbar{
-    justify-content: center;
-}
 
 .portfolio-title{
     text-align: center;
@@ -152,7 +149,7 @@ nav{
 }
 
 .project-container{
-    display: flexbox;
+    justify-content: center;
 }
 
 .portfolio-image{
@@ -160,8 +157,8 @@ nav{
     height: 10em;
 }
 
-.project-container, span{
-    display: block;
+.project-container{
+    display: inline-block;
 }
 
 

@@ -55,16 +55,24 @@
     top: 100px;
     right: 0px;
     z-index: 1;
-
 }
 
-.nav-option:hover{
-    color: #333;
+a, .nav-option{
+    text-decoration: none;
+}
+
+.nav-link{
+    margin: 20%;
+    overflow: hidden;
+}
+
+.nav-link:hover{
+    background-color: #d9d9d9;
 }
 
 #nav-list{
     list-style: none;
-
+    text-align: left;
 }
 
 #mid-container{

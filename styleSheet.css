@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
 
+/* content on  all pages */
+
 .text{
     font-family: 'Montserrat', sans-serif;
-
 }
 
 #top-bar{
@@ -75,6 +76,8 @@ a, .nav-option{
     text-align: left;
 }
 
+/* home page */
+
 #mid-container{
     display: flex;
     align-items: center;
@@ -86,14 +89,12 @@ a, .nav-option{
 
 }
 
-
 #front-text{
     font-size: 1.5em;
     font-size: 1.8vw;
     display: block;
     white-space: pre;
     color: black
-
 }
 
 #front-headshot{
@@ -121,12 +122,12 @@ a, .nav-option{
 
 .social-list{
     text-align: center;
-    
 }
 
 i.fab{
     color:black;
 }
+
 i.far{
     color: black;
 }
@@ -134,3 +135,27 @@ i.far{
 nav{
     padding: 5%;
 }
+
+
+/* portfolio page */
+#portfolio-topbar{
+    justify-content: center;
+}
+
+.portfolio-title{
+    text-align: center;
+    text-decoration: underline;
+}
+
+#project-list{
+    list-style: none;
+    
+}
+
+.portfolio-image{
+    float: left;
+    width: 10em;
+    height: 10em;
+}
+
+/* about page */

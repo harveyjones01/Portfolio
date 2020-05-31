@@ -148,14 +148,21 @@ nav{
 }
 
 #project-list{
-    list-style: none;
-    
+    list-style: none; 
+}
+
+.project-container{
+    display: flexbox;
 }
 
 .portfolio-image{
-    float: left;
     width: 10em;
     height: 10em;
 }
+
+.project-container, span{
+    display: block;
+}
+
 
 /* about page */

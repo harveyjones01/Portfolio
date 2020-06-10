@@ -161,5 +161,15 @@ nav{
     display: inline-block;
 }
 
+.project-description{
+    float: right;
+}
 
 /* about page */
+
+.skills-container{
+    justify-content: space-between;
+    display: flex;
+}
+
+

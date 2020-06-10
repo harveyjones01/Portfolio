@@ -1,14 +1,17 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleSheet.css">
     <title>About Me</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue-graph@0.5.3/dist/vue-graph.js"></script>
 </head>
 <body>
 
     <!--Header content, DON'T CHANGE-->
+
     <div id="top-container">
         <div class="empty-space"></div>
         <div id="title">
@@ -37,9 +40,70 @@
     </div> 
 
     <!--main content-->
+    <div class="skills-container">
+        <div class="empty-space"></div>
+        <div class="app-container">
+            <div id="app">
+                <graph-bubblecloud
+                        :width="500"
+                        :height="500"
+                        :padding-top="5"
+                        :padding-bottom="0"
+                        :padding-left="0"
+                        :padding-right="0"
+                        :values="values"
+                        :colors="colors"
+                        :styles="styles"
+                        :render-interval="0"
+                        @click="onClickEvent">
+                    <note :text="'Bubble Cloud (Created by luavis)'" :align="'left'"></note>
+                </graph-bubblecloud>
+            </div>
+        </div>
+        <div class="empty-space"></div>
+    
+    </div>
+        
 
 
     <!--js animations, dont touch-->
     <script src="script.js"></script>
+
 </body>
+<script>
+    var vm = new Vue({
+  el: "#app",
+  data: {
+      values: [
+          [ "Java", 70, 1000 ],
+          [ "Python", 70, 1000 ],
+          [ "Psql", 70, 1000 ],
+          [ "HTML", 70, 1000 ],
+          [ "CSS", 70, 1000 ],
+          [ "Problem solving", 70, 1000 ],
+          [ "Critical thinking", 70, 1000 ],
+          [ "Creativity", 70, 1000 ],
+          [ "Adaptability", 70, 1000 ]
+      ],
+      colors: function(data) {
+          if (data[2] <= 3000) {
+            return '#3366cc';
+          } else if (data[2] <= 7000) {
+            return '#3366cc';
+          } else {
+            return '#3366cc';
+          }
+      },
+      styles: {
+          titleFontSize: 0,
+          titleFontWeight: 'bold'
+      }
+  },
+  methods: {
+      onClickEvent: function(obj, e) {
+          console.log(obj.data);
+      }
+  }
+});
+</script>
 </html>

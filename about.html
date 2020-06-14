@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styleSheet.css">
     <title>About Me</title>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue-graph@0.5.3/dist/vue-graph.js"></script>
 </head>
@@ -61,8 +62,19 @@
             </div>
         </div>
         <div class="empty-space"></div>
-    
     </div>
+
+    <div class="skills-container">
+        <div class="empty-space"></div>
+        <div class="type-container">
+            <div id="typed-strings">
+                <p id="typing">Click on the skill to show more information..</p>
+              </div>
+              <span id="typed"></span>
+        </div>
+        <div class="empty-space"></div>
+    </div>
+    <h1 id="displaying-text"></h1>
         
 
 
@@ -70,6 +82,14 @@
     <script src="script.js"></script>
 
 </body>
+
+<script>
+    var typed = new Typed('#typed', {
+      stringsElement: '#typed-strings',
+      typeSpeed: 50
+    });
+</script>
+
 <script>
     var vm = new Vue({
   el: "#app",
@@ -80,18 +100,16 @@
           [ "Psql", 70, 1000 ],
           [ "HTML", 70, 1000 ],
           [ "CSS", 70, 1000 ],
-          [ "Problem solving", 70, 1000 ],
-          [ "Critical thinking", 70, 1000 ],
-          [ "Creativity", 70, 1000 ],
-          [ "Adaptability", 70, 1000 ]
+          [ "Problem solving", 70, 4000 ],
+          [ "Critical thinking", 70, 4000 ],
+          [ "Creativity", 70, 4000 ],
+          [ "Adaptability", 70, 4000 ]
       ],
       colors: function(data) {
           if (data[2] <= 3000) {
             return '#3366cc';
-          } else if (data[2] <= 7000) {
-            return '#3366cc';
-          } else {
-            return '#3366cc';
+          }else {
+            return '#e6c067';
           }
       },
       styles: {
@@ -100,8 +118,26 @@
       }
   },
   methods: {
-      onClickEvent: function(obj, e) {
-          console.log(obj.data);
+      onClickEvent: function(obj, e, data, values) {  
+        console.log(obj.data[0]);
+        
+
+        switch(obj.data[0]){
+            case "Python":
+                document.getElementById("displaying-text").innerHTML = "Python working";
+            case "Java":
+                document.getElementById("displaying-text").innerHTML = "Java working";
+            case "Psql":
+                document.getElementById("displaying-text").innerHTML = "Psql working";
+            case "HTML":
+                document.getElementById("displaying-text").innerHTML = "HTML working";
+            case "CSS":
+                document.getElementById("displaying-text").innerHTML = "CSS working";
+        }
+ 
+
+        
+          
       }
   }
 });

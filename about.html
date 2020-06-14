@@ -7,6 +7,9 @@
     <title>About Me</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.js"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+        </style>
     <script src="https://cdn.jsdelivr.net/npm/vue-graph@0.5.3/dist/vue-graph.js"></script>
 </head>
 <body>
@@ -64,17 +67,12 @@
         <div class="empty-space"></div>
     </div>
 
-    <div class="skills-container">
+    <div class="description-container">
         <div class="empty-space"></div>
-        <div class="type-container">
-            <div id="typed-strings">
-                <p id="typing">Click on the skill to show more information..</p>
-              </div>
-              <span id="typed"></span>
-        </div>
+        <h1 class="text" id="displaying-text"></h1>
         <div class="empty-space"></div>
     </div>
-    <h1 id="displaying-text"></h1>
+    
         
 
 
@@ -82,13 +80,6 @@
     <script src="script.js"></script>
 
 </body>
-
-<script>
-    var typed = new Typed('#typed', {
-      stringsElement: '#typed-strings',
-      typeSpeed: 50
-    });
-</script>
 
 <script>
     var vm = new Vue({
@@ -119,25 +110,27 @@
   },
   methods: {
       onClickEvent: function(obj, e, data, values) {  
-        console.log(obj.data[0]);
-        
 
-        switch(obj.data[0]){
-            case "Python":
-                document.getElementById("displaying-text").innerHTML = "Python working";
-            case "Java":
-                document.getElementById("displaying-text").innerHTML = "Java working";
-            case "Psql":
-                document.getElementById("displaying-text").innerHTML = "Psql working";
-            case "HTML":
-                document.getElementById("displaying-text").innerHTML = "HTML working";
-            case "CSS":
-                document.getElementById("displaying-text").innerHTML = "CSS working";
+        if(obj.data[0] == "Python"){
+                document.getElementById("displaying-text").innerHTML = "I've been using python to build applications for the past 3 years.";
+        }else if (obj.data[0] == "Java"){
+            document.getElementById("displaying-text").innerHTML = "I've got over a years experience with java.";
+        }else if (obj.data[0] == "CSS"){
+            document.getElementById("displaying-text").innerHTML = "I've used CSS along with SASS and bootstrap to style webpages.";
+        }else if (obj.data[0] == "HTML"){
+            document.getElementById("displaying-text").innerHTML = "I've used HTML along with Jinja to build dynamic web pages.";
+        }else if (obj.data[0] == "Psql"){
+            document.getElementById("displaying-text").innerHTML = "I'm able to build and query relational databases with PostgreSQL.";
+        }else if (obj.data[0] == "Problem solving"){
+            document.getElementById("displaying-text").innerHTML = "";
+        }else if (obj.data[0] == "Critical thinking"){
+            document.getElementById("displaying-text").innerHTML = "";
+        }else if (obj.data[0] == "Creativity"){
+            document.getElementById("displaying-text").innerHTML = "";
+        }else if (obj.data[0] == "Adaptability"){
+            document.getElementById("displaying-text").innerHTML = "";
         }
- 
-
-        
-          
+    
       }
   }
 });

@@ -175,6 +175,10 @@ nav{
     margin: auto;
 }
 
+.description-container{
+    display: flex;
+    justify-content: center;
+}
 
 
 

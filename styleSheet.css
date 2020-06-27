@@ -47,12 +47,12 @@
 #navigation-bar{
     visibility: hidden;
     border-style: solid;
-    border-radius: 25px;
+    border-radius: 50px;
     border-width: 1px;
     background-color: white;
     position: absolute;
-    height: 50%;
-    width: 25%;
+    height: 30%;
+    width: 20%;
     top: 100px;
     right: 0px;
     z-index: 1;
@@ -63,7 +63,8 @@ a, .nav-option{
 }
 
 .nav-link{
-    margin: 20%;
+    padding: rem ;
+    margin: 0%;
     overflow: hidden;
 }
 
@@ -91,7 +92,7 @@ a, .nav-option{
 
 #front-text{
     font-size: 1.5em;
-    font-size: 1.8vw;
+
     display: block;
     white-space: pre;
     color: black

@@ -141,15 +141,11 @@ nav{
 /* portfolio page */
 
 .portfolio-title{
-    text-align: center;
-    text-decoration: underline;
+    display: flex;
+    justify-content: center;
 }
 
-#project-list{
-    list-style: none; 
-}
-
-.project-container{
+.table-container{
     display: flex;
     justify-content: center;
 }
@@ -157,15 +153,6 @@ nav{
 .portfolio-image{
     width: 10em;
     height: 10em;
-}
-
-.project-container{
-    display: flex;
-    justify-content: space-around;
-}
-
-.project-description{
-    float: right;
 }
 
 /* about page */

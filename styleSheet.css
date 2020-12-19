@@ -115,59 +115,9 @@ a, .nav-option{
     }
 }
 
-.social-elements{
-    margin: 5%;
-    list-style-type: none;
-    display: inline-block;
+
+#bottom-container{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-
-.social-list{
-    text-align: center;
-}
-
-i.fab{
-    color:black;
-}
-
-i.far{
-    color: black;
-}
-
-nav{
-    padding: 5%;
-}
-
-
-/* portfolio page */
-
-.portfolio-title{
-    display: flex;
-    justify-content: center;
-}
-
-.table-container{
-    display: flex;
-    justify-content: center;
-}
-
-.portfolio-image{
-    width: 10em;
-    height: 10em;
-}
-
-/* about page */
-
-.skills-container{
-    justify-content: space-between;
-    display: flex;
-    margin: auto;
-}
-
-.description-container{
-    display: flex;
-    justify-content: center;
-}
-
-
-
-
